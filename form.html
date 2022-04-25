@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML form</title>
+</head>
+<body>
+  <form action="https://kredo.jp/online/" method="get">
+   <!-- Text Input -->
+    <label for="fullname">Full name:</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Last Name, First Name" required maxlength="10">
+    <br>
+
+    <lable for="email">Email:</lable>
+    <input type="email" name="email" id="email" placeholder="@gmail.com">
+    <br>
+
+    <label for="">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Your Password">
+    <br>
+
+    <lable for="">Age:</lable>
+    <input type="number" name="age" id="age" max="30">
+    <br>
+
+    <lable for="">Birthday:</lable>
+    <input type="date" name="birthday" id="birthday">
+    <br>
+
+    <!-- Radio Button -->
+    <div>
+      <p>Your Gender</p>
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" value="female" id="female">
+      <lable for="female">Female</lable>
+
+      <input type="radio" name="gender" value="other" id="other">
+      <label for="other">Other</label>
+
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+
+      <p>Your Brand Car</p>
+      <input type="checkbox" name="car" id="toyota" value="toyota">
+      <label for="toyota">Toyota</label>
+
+      <input type="checkbox" name="car" id="suzuki" value="suzuki">
+      <label for="suzuki">Suzuki</label>
+
+      <input type="checkbox" name="car" id="ford" value="ford">
+      <label for="ford">Ford</label>
+
+    </div>
+
+    <!-- Dropdown list box -->
+    <br>
+    <label for="for">Your Smart Phone</label>
+    <select name="phone" id="phone">
+      <option value="" hidden>Select Phone</option>
+      <option value="iphone">Iphone</option>
+      <option value="sumsung">Samsung</option>
+      <option value="xiaomi">Xiaomi</option>
+    </select>
+
+    <!-- Text Area -->
+    <br><br>
+    <label for="comment">Comment</label>
+    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your Comment!"></textarea>
+
+    <!-- Buttons -->
+    <br><br>
+    <input type="submit" name="submit" value="Send">
+    <button type="submit" name="submit" value="submit">ok</button>
+    <input type="image" src="assets/images/submit.png" name="submit" width="50px">
+  
+  <!-- Validation
+    For character only
+      required=important
+      minlength = check minimum numbers of characters
+      maxlengh= check the max characters
+    
+    for number
+    min=must be greater than or equal to minimum value
+    max=
+    must be less than or equal to maximum value%
+  -->
+  
+  </form>
+</body>
+</html>

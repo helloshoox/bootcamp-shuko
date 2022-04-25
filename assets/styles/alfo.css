@@ -1,0 +1,67 @@
+body{
+  background-color: #FFAFAF;
+}
+
+
+
+h1{
+  color:#FBFFE2;
+  font-size: 70px;
+  text-align: center;
+  background-color: #FF9999;
+  height: 100px;
+  width: 100%;
+}
+
+.alfonso{
+  text-align: center;
+
+}
+
+h2{
+  color: #FF9999;
+  background-color:#FBFFE2;
+
+}
+h2 span{
+  color:#FF6363;
+}
+
+p{
+  color: #FBFFE2;
+}
+
+.container1{
+  background-color: #FF9999;
+  color:#FBFFE2 ;
+  padding: 100px;
+}
+
+table{
+  color:#FF9999;
+  border-color: #FF9999;
+  empty-cells: hide;
+  border-collapse: separate;
+  border-spacing:10px 20px ;
+  margin: auto;
+}
+
+table tr th{
+  background-color:#FBFFE2;
+  opacity: .8;
+}
+
+table tr td{
+  background-color:
+  rgba(251, 255, 226,.5);
+  padding: 30px 50px; 
+}
+
+.chibi{
+  margin-left: 50px;
+}
+
+.heart{
+  margin-left: 60px;
+}
+

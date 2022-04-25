@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+/* CSS Selectors*/
+/* Universal Selector Using (*) = call all elements*/
+
+/* *{
+  background-color: yellowgreen;
+  color: red;
+}*/
+
+/* Element Selector*/
+
+ body {
+  background-color:darkgoldenrod;
+}
+
+h1{
+  color: white;
+}
+
+span{
+  color:aqua;
+}
+h2{
+  color: white;
+  background-color: darkmagenta;
+}
+
+p{
+  color:white;
+}
+
+
+
+/* class selector*/
+.titlelogo{
+  background-color:darkmagenta;
+  height:40px;
+  width:100%;  
+}
+
+.container1{
+  background-color: darkorchid;
+  height:200px;
+  width:100%;
+}
+
+.container2{
+  background-color: limegreen;
+  height:200px;
+  width:100%;
+}
+
+
+
+/* id selector*/
+#con3{
+  background-color: lightseagreen;
+}
+
+/* and selector using(,) */
+h1, 
+h2{
+  color: gainsboro;
+}
+
+/* descendant selctor using (space)*/
+/* #con3 is the parent */
+#con3 h2 span {
+  color: orange;
+}
+
+
+/*CSS typography*/
+/* CSS clour*/
+/*rgb (red, green, blue)*/
+.container4{
+  background-color: rgb(246, 67, 150);
+}
+
+/* rgba(red,green,blue, alpha channel)
+  alpha channel=control the transparency/visibility 
+  0= not visible at all
+  .5=50% visible
+  1= 100% visible*/
+
+  .container5{
+    background-color: rgba(246, 67, 150, .5);
+  }
+
+  /* opacity
+    0= not visible at all
+  .5=50% visible
+  1= 100% visible
+   
+  this affect to whole content
+  */
+  .container6{
+    background-color: rgb(246, 67, 150);
+    opacity: .5;
+  } 
+
+/* hexcode*/
+  .container7{
+    background-color:#D9D7F1;
+  }
+ 
+  /*font family
+    1.serf
+    2.san-serif
+    3.monospace
+  */
+  .container8{
+    font-family: monospace;
+  }
+
+  /* import font-family*/
+.container9 h2{
+  font-family: 'Oswald', sans-serif;
+}
+.container9 p{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* font size
+  1.px=16px(deualt)
+  2.%=100%
+  3.em=1
+
+  defualt= font size is 16px
+  */
+ .container10{
+   font-size: 50px;
+ } 
+
+ .container10 p{
+   font-size: 32px;
+ }
+
+ /* font-weight
+    1.lighter
+    2.normal
+    3.bold
+
+    100-900
+*/
+.container11 h2{
+  font-weight: 900;
+}
+
+.container11 p{
+  font-weight: bold;
+}
+
+/* font-style
+
+  1.normal
+  2.italic
+  3.oblique
+
+*/
+.container11 p{
+  font-style: italic;
+}
+
+/* text-transform
+  1.uppercase
+  2.lowercase
+  3.capitalize
+  */
+
+  .container11 h2{
+    text-transform: uppercase;
+  }
+
+  /* text-decoration
+    1.overline
+    2.underline
+    3.line-through
+    4.none
+
+*/
+.container11 h2{
+  text-decoration: line-through;
+} 
+
+.container11 a{
+  text-decoration: none;
+}
+
+/* text-align 
+
+  1.left
+  2.center
+  3.right
+
+*/
+.container11 h2{
+  text-align:center;
+}
+
+/* text-shadow
+  1st value
+  =horizontal(- to the left, + to the right)
+  2nd=varticcal(- to upward, + to downward)
+  3rd= blury
+  4th colour
+*/
+.container11 h2{
+  text-shadow: 2px 2px 2px #B9F8D3,
+  -2px -2px 2px #143F6B
+}
+
+/* text-indent
+  px,%,em
+*/ 
+.container1 p{
+  text-indent: 50px;
+}
+
+.container2 p{
+  text-indent: 5%;
+}
+
+.container3 p{
+  text-indent: 5em;
+}
+
+/*letter-spacing*/
+  .container1 p{
+  letter-spacing: 2px;
+  }
+
+/* word-spacing*/
+.container2 p{
+  word-spacing: 20px;
+}
+
+/*CSS list
+no matter how the list code is in the html, you can change the appearance
+
+unordered list 
+  disc
+  circle
+  lsquare
+  none
+
+  ordered list
+  ower-alpha
+  upper-alpha
+  lower-roman,
+
+*/
+.container12 ul li{
+  list-style: none;
+}
+
+/*list-style-position*/
+.container12 ol{
+  background-color:#B9F8D3 ;
+  color: white;
+  list-style-position: inside;
+}
+
+.container12 ol li{
+  background-color: darkorchid;
+}

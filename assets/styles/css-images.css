@@ -1,0 +1,92 @@
+/*css Images*/
+.toyota{
+  width:500px;
+}
+
+.suzuki{
+  width:100%
+  /*if you use % the images will be responsive*/
+}
+
+/*background image
+
+    backgroud-size:
+    ex:100px 200px;
+    first value=width
+    2nd=height
+    1value=width
+
+    contain
+    cover
+
+overflow:
+  hidden
+  scroll
+  auto=scroll (if the content is overflowing you can scroll)
+
+background-attachment:
+  scroll=defualt
+  fixed
+
+*/
+.container1{
+  /* width:300px; */
+  width:100%;
+  height: 300px;
+  background-color: aqua;
+  background-image: url(../images/toyota\ car.JPG);
+  /* ../ and enter */
+
+  background-size: cover; 
+  /*to remove repetition*/
+  background-repeat: no-repeat;
+  /*if you want to position the background image. use background-position*/
+  background-position: center;
+  color: red;
+  overflow: scroll;
+  background-attachment:fixed;
+}
+
+
+/* Css Table 
+
+empty-cell:
+ hide
+ show
+
+ border-collapse:
+  separate=defualt
+  collapse=no space
+
+
+*/
+table{
+  width:500px;
+  color:#ffff;
+  empty-cells: hide;
+  border-collapse:separate;
+}
+
+table tr th{
+  background-color: gray;
+}
+
+table tr td{
+  background-color: burlywood;
+}
+
+/* border-spacing
+  1 value only=apply for all sides(horizontal+vertical)
+  
+  if there's 2 values
+  1st=horizontal spacing
+  2nd=vertical spacing
+
+*/
+table{
+  border-spacing:15px 30px ;
+}
+
+/* Css box order */
+
+

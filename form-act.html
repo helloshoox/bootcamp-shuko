@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Activity</title>
+</head>
+
+
+<body>
+<form action="" method="get">
+  <table border="1" width="500px">
+   <tr>
+     <td>Full Name*</td>
+     <td>
+      <input type="text" name="firstname" id="firstname" placeholder="First Name">
+     </td>
+     <td>
+      <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+     </td>
+   </tr>
+   
+   <tr>
+     <td>University*</td>
+     <td colspan="2">
+      <!-- Dropdown button -->
+      <select name="university" id="university">
+        <option value=""hidden>Select University</option>
+        
+        <option value="tokyo university">Tokyo University</option>
+        
+        <option value="cambidge university">Cambridge University</option>
+        
+        <option value="yell university">Yell University</option>
+      </select>
+     </td>
+   </tr>
+
+   <tr>
+     <td>Where would you like to work?</td>
+     <td colspan="2">
+       <!-- Checkbox -->
+        <input type="checkbox" name="workplace" id="academia" value="academia">
+        <label for="academia">Academia</label>
+        <br>
+  
+        <input type="checkbox" name="workplace" id="industory" value="industory">
+        <label for="industory">Industory</label>
+        <br>
+  
+        <input type="checkbox" name="workplace" id="consultancy" value="consultancy">
+        <label for="consultancy">Consultancy</label>  
+     </td>
+   </tr>
+   <tr>
+     <td>E-mail*</td>
+     <td colspan="2">
+       <input type="email" name="email" id="email" placeholder="ex. myname@example.com">
+      <br>
+
+        <input type="email" name="email" id="email" placeholder="Confirm Email"> 
+     </td>
+   </tr>
+   
+   <tr>
+     <td>would you like to sign to our newsletter?</td>
+     <td colspan="2">
+       <!-- Radio button -->
+       <input type="radio" name="request" value="yes" id="yes">
+      <label for="yes">Yes</label>
+      <br>
+
+      <input type="radio" name="request" value="signed" id="signed">
+      <lable for="signed">No, I have already signed up.</lable>
+      <br>  
+      <input type="radio" name="request" value="no" id="no">
+      <label for="no">No</label>
+     </td>
+   </tr>
+   
+   <tr>
+     <!-- Button -->
+     <td></td>
+     <td colspan="2">
+       <button type="submit" name="submit" value="submit">Submit</button>
+      </td>
+   </tr>
+  </table>
+
+</form>
+</body>
+
+</html>

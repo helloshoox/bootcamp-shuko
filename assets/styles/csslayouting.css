@@ -1,0 +1,223 @@
+/* presets/custom */
+
+/* remove all defualt spaces, margins, important*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* if there is outline, you will see a order outside of border */
+  box-sizing: border-box;
+  /* no matter the padding and margins the boxsize remain the same */
+
+}
+/* heading */
+.nav{
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 1em auto;
+  overflow: auto; 
+  /* without overflow the border float above the element */
+}
+
+.nav h1 a{
+  float: left;
+  text-decoration: none;
+  color: grey;
+  font-family: sans-serif;
+  text-transform:uppercase;
+  margin-top: 7px;
+}
+
+.nav h1 a:hover{
+  float: left;
+  text-decoration: none;
+  color: red;
+  font-family: sans-serif;
+  text-transform:uppercase;
+  margin-top: 7px;
+}
+
+.nav ul{
+  float: right;
+  list-style: none;
+  margin: 1em auto;
+}
+
+.nav ul li{
+  display: inline;
+  /* border :3px dashed blue; */
+}
+
+.nav ul li a{
+  text-decoration: none;
+  /* border:3px dotted goldenrod; */
+  margin-left: 1em;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nav ul li a:hover{
+  text-decoration: none;
+  /* border:3px dotted goldenrod; */
+  margin-left: 1em;
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* section */
+.section{
+  /* clear: both; 
+    in case the element is overflowing, either use this 'clear' or 'overflow'*/
+  /* border: 5px solid darkblue; */
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-text{
+  /* border: 5px dotted goldenrod; */
+  height:500px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;  
+}
+
+#toyota{
+  background-image: url(../images/toyota\ car.JPG);
+  background-position: center;
+  background-size:cover;
+}
+
+#suzuki{
+  background-image:url(../images/suzuki\ car.JPG) ;
+  background-position: center;
+  background-size:cover;
+  /* floating won't be here. insert for section-text */
+}
+
+.section-text a{
+  background-color: rgba(255,255,255,.5);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  display: inline-block;
+  /* if  the elements are inline the margin top and bottom won't accepted. if only block, the box will cover whole width of 50% in this case*/
+}
+
+.section-text a:hover{
+  background-color: rgba(255,255,255,1);
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  display: inline-block;
+  /* if  the elements are inline the margin top and bottom won't acceptid. if only block, the box will cover whole width of 50% in this case*/
+}
+
+/* Css positioning */
+  /* static
+      defualt position: 
+      will not support adjustment top,right,bottom and left
+     
+     relative
+
+
+  */
+
+.static{
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  left: 100px; /*not supported*/
+  margin-bottom: 2em; /*position won't be supported but margin will be supported for static*/
+}
+
+.relative1{
+  height: 300px;
+  width: 45%;
+  background-color: yellow;
+  position: relative;
+  left: 4%;
+}
+
+.relative2{
+  height: 300px;
+  width: 45%;
+  background-color: darkmagenta;
+  position: relative;
+  bottom:300px ;
+  left: 51%; /* calcurate the remaining space next to the relative1 box*/
+  z-index: 2;
+}
+
+/* absolute no parent */
+.absolute1{
+  height:200px ;
+  width:20% ;
+  background-color: aqua;
+  position: absolute; /*it won't have parent and move around whole screen*/
+  bottom:-100px;
+  left: 40%;
+  z-index:1 ;
+}
+
+/* absolute with parent
+  child absolute will now relative/depends on the parent */
+.parent-absolute2{
+  height:300px;
+  width: 45%;
+  background-color: darkgreen;
+  position: relative;
+   /*if this is relative, even the child is absolute only move around inside the parent box*/
+   bottom: 270px;
+   left: 27.5%;
+}
+
+.child-absolute2{
+  height: 150px;
+  width: 150px;
+  background-color:orange;
+  position: absolute;
+  right: 0;
+  top: 100px;
+
+}
+
+/* fixed */
+.fixed{
+  height: 100px;
+  width: 100px;
+  background-color: chocolate;
+position: fixed;
+bottom: 0;
+right: 5%;
+z-index: 3;
+}
+
+/* z-index */
+/* .absolute1{ 
+    z-index:1 ;
+}
+
+.relative2{
+  z-index: 2;
+}
+
+.fixed{
+  z-index: 3;
+}*/
+
+
+
+
+
+
